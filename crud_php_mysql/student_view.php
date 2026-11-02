@@ -6,6 +6,7 @@
   session_start();
   if (!isset($_SESSION["username"])) {
      header("Location: login.php");
+     exit(); // Tambahkan ini agar eksekusi berhenti
   }
 
   include("connection.php");
@@ -24,7 +25,7 @@
   <link href="assets/style.css" rel="stylesheet" >
 </head>
 <body>
-  <div class="container">
+  <div class="container"> 
     <div id="header">
       <h1 id="logo">Data Mahasiswa</h1>
     </div>
