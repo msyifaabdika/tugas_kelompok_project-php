@@ -1,5 +1,8 @@
 
+
 <?php
+// Dikembangkan/dimodifikasi oleh: Muhammad Syifa Abdika (Msyifaabdika)
+// Fitur: Tugas Kelompok Version Control System - Modul 06
   session_start();
   if (!isset($_SESSION["username"])) {
      header("Location: login.php");
